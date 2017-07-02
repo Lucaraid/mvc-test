@@ -1,0 +1,6 @@
+<FilesMatch ".php">
+AuthName "Install Admin Pannel"
+AuthType Basic
+AuthUserfile "../htdocs/oop-website/app/installation/.htpasswd"
+require valid-user
+</FilesMatch>

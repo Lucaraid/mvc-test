@@ -1,0 +1,62 @@
+INSTALLATION
+----------------------------------------------------------------------------------------------------------------
+
+1. Update Config
+
+	- Open "/app/config" Folder
+		- Open global.php File with your Editor
+			- Update Mysql
+				- Host			This is your Database Host 	(Example: localhost)
+				- User			This is your Database User 	(Example: root)
+				- Pass			This is your Database Password	(Example: password)
+				- Config Database	This is your Config Database	(Example: config)
+<p style="padding: 0px; padding-left: 50px; margin: 0px; ">- Means there will be stored all Users or if the Site is disabled...</p>
+
+			- Update Paths
+				- Url
+					- In this Folder will be stored the "app/" and "public/" Folder
+
+		- Close global.php File
+	- Close "/app/config" Folder
+
+
+2. Update Rewrite Base
+
+	- Open "/public" Folder
+		- Open .htaccess File with your Editor
+			- Update RewriteBase Path to
+				- /{your install Folder}/public
+				- Example /example/public
+
+		- Close .htaccess File
+	- Close "/public" Folder
+
+
+3. Create Database
+
+	- Open your Browser (Firefox, Google Chrome, Internet Explorer)
+		- Run the install.php File
+			- Example: "http://localhost/example-folder/app/installation/install.php"
+
+		- Open "/app/installation" Folder
+			- Open .htpasswd File with your Editor
+				- Copy the User
+					- Example:
+						- user:pass (Copy the "user")
+						- admin:test (Copy the "admin")
+
+					- Goto your Browser
+						- Insert copied User into the first Field (Username/Benutzer)
+
+				- Copy the Password
+					- Example:
+						- user:pass (Copy the "pass")
+						- admin:test (Copy the "test")
+					- Goto your Browser
+						- Insert copied Password into the second Field (Password/Passwort)
+
+				- Click on the Button "Now"
+
+			- Close .htpasswd File
+		- Close "/app/installation" Folder
+	- Close your Browser
